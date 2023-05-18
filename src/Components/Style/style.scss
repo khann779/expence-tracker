@@ -1,0 +1,320 @@
+body {
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-weight: 700;
+}
+
+.light {
+  .sun {
+    background-color: #e1e6fb;
+    .bisun {
+      color: white;
+      background-color: #0d99ff;
+    }
+    .bimoon {
+      color: #0d99ff;
+      background-color: #e1e6fb;
+    }
+  }
+
+  .container-fluid {
+    background-color: #f5f7fa;
+  }
+
+  .balance {
+    background-color: white;
+    .balans {
+      color: #0d99ff;
+    }
+    .money {
+      color: #0d99ff;
+      .dropdown {
+        background-color: #0d99ff;
+        color: white;
+      }
+      span {
+        background-color: white;
+        color: white;
+        i {
+          color: white;
+          background-color: #0d99ff;
+        }
+        p {
+          color: #555f7d;
+        }
+      }
+    }
+  }
+
+  .transaction {
+    background-color: white;
+    color: #555f7d;
+    input,
+    textarea {
+      background-color: #f5f7fa;
+      color: #3c3c3c;
+    }
+  }
+
+  .history {
+    background-color: white;
+    color: #555f7d;
+  }
+
+  .buttons {
+    .income {
+      background-color: rgb(0, 163, 0);
+      color: white;
+    }
+    .expense {
+      background-color: rgb(235, 35, 35);
+      color: white;
+    }
+  }
+  .check {
+    color: rgb(0, 163, 0);
+  }
+  .cross {
+    color: rgb(235, 35, 35);
+  }
+}
+
+.dark {
+  .navbar {
+    background-color: #222222;
+  }
+  .moon {
+    background-color: #e1e6fb;
+    .bimoon {
+      color: white;
+      background-color: #222222;
+    }
+    .bisun {
+      color: black;
+      background-color: #e1e6fb;
+    }
+  }
+
+  .container-fluid {
+    background-color: black;
+  }
+
+  .balance {
+    background-color: #222222;
+    .balans {
+      color: white;
+    }
+    .money {
+      color: white;
+      .dropdown {
+        background-color: black;
+        color: white;
+        .dropdown-menu {
+          background-color: black;
+        }
+      }
+      span {
+        color: white;
+        i {
+          color: white;
+          background-color: #222222;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .transaction {
+    background-color: #222222;
+    color: white;
+    input,
+    textarea {
+      background-color: #3c3c3c;
+      color: white;
+    }
+  }
+
+  .history {
+    background-color: #222222;
+    color: white;
+  }
+
+  .buttons {
+    .income {
+      background-color: rgb(0, 56, 0);
+      color: white;
+    }
+    .expense {
+      background-color: rgb(94, 0, 0);
+      color: white;
+    }
+  }
+  .check {
+    color: rgb(0, 163, 0);
+  }
+  .cross {
+    color: rgb(235, 35, 35);
+  }
+}
+
+.navbar {
+  display: flex;
+  padding: 0.5rem;
+  img {
+    width: 10rem;
+  }
+}
+
+.container-fluid {
+  padding: 0.5rem;
+  height: 47rem;
+}
+
+.sun {
+  border-radius: 10px;
+  .bisun {
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+  }
+  .bimoon {
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+  }
+}
+
+.moon {
+  border-radius: 10px;
+  .bimoon {
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+  }
+  .bisun {
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+  }
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  .balans {
+    font-size: 25px;
+    display: flex;
+    p {
+      margin: 0rem 1rem;
+    }
+  }
+  .money {
+    display: flex;
+    font-size: 20px;
+    .dropdown {
+      border: none;
+      border-radius: 50%;
+      span {
+        display: flex;
+        flex-direction: row;
+        text-transform: uppercase;
+        justify-content: space-around;
+        align-items: center;
+        i {
+          font-size: 25px;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        p {
+          margin: 0rem 0.5rem;
+        }
+      }
+    }
+    .p {
+      margin: 0rem 0.5rem;
+    }
+  }
+}
+
+.operation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .transaction {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 30rem;
+    height: 38rem;
+    p {
+      font-size: 20px;
+    }
+    .amount {
+      display: flex;
+      flex-direction: column;
+    }
+    .desc {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    input,
+    textarea {
+      border: none;
+      border-radius: 10px;
+      padding: 0.2rem 0.5rem;
+      margin: 0.5rem 0rem;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 2rem 0rem;
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 11rem;
+        p {
+          margin: 0rem 0.5rem;
+        }
+      }
+    }
+  }
+  .history {
+    width: 70rem;
+    height: 38rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    p {
+      font-size: 20px;
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      .descr {
+        display: flex;
+        .ic {
+          margin: 1rem;
+          font-size: 30px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
